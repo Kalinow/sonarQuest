@@ -11,7 +11,9 @@
     "LOGOUT": "Abmelden",
     "BACKGROUND": "Schalte Hintergrund-Transparenz um",
     "USER_PROFILE": "Öffne Benutzerprofil",
-    "EVENTS": "Taverne"
+    "EVENTS": "Taverne",
+    "CONNECTION_LOST": "Serververbindung verloren",
+    "CONNECTION_LOST_TOOLTIP": "Die Verbindung zum Server wurde verloren. Versuche Reaktivierung..."
   },
   "ADVENTURE_PAGE": {
     "MY_ADVENTURES": "Meine Abenteuer",

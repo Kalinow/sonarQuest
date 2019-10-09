@@ -11,7 +11,9 @@
     "LOGOUT": "Logout",
     "BACKGROUND": "Switch transparency of background",
     "USER_PROFILE": "Open user profile",
-    "EVENTS": "Tavern"
+    "EVENTS": "Tavern",
+    "CONNECTION_LOST": "Connection to server lost",
+    "CONNECTION_LOST_TOOLTIP": "The connection to the server was lost. Retry connect..."
   },
   "ADVENTURE_PAGE": {
     "MY_ADVENTURES": "My Adventures",

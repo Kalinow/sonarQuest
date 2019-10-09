@@ -62,17 +62,30 @@
     </div>
 
     <div *ngIf="isEventVisible">
-      <a mat-list-item routerLink="/{{eventUrl}}" (click)="updateLastTavernVisit()"> 
+      <a mat-list-item routerLink="/{{eventUrl}}" (click)="updateLastTavernVisit()">
         <i mat-list-icon class="ra ra-beer ra-lg navlist"></i>
         <h3 mat-line>{{"APP_COMPONENT.EVENTS"| translate}} <i mat-list-icon class="ra ra-ringing-bell notification-icon pulse" *ngIf="unseenEventsAvailable"></i></h3>
-        
+
       </a>
       <mat-divider mat-inset></mat-divider>
     </div>
   </mat-nav-list>
   <div td-toolbar-content layout="row" flex>
     <div class="vertical-align">{{determinePageTitle(router.url)}}</div>
+
     <div flex></div>
+
+    <div *ngIf="true" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="blink">
+      <mat-icon>warning</mat-icon>
+      <span [matTooltip]="'APP_COMPONENT.CONNECTION_LOST_TOOLTIP' | translate"
+            [matTooltipClass]="'tooltipMultiline'"
+            matTooltipPosition="below">
+         {{"APP_COMPONENT.CONNECTION_LOST" | translate}}
+      </span>
+    </div>
+
+    <div flex></div>
+
     <div class="username-toolbar vertical-align">
       <button *ngIf="user" mat-icon-button routerLink="/{{myAvatarUrl}}"
               [matTooltip]="'APP_COMPONENT.USER_PROFILE' | translate"
