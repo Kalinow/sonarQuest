@@ -57,4 +57,9 @@ describe('MainLayoutComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show a "connection lost" indicator, when the server is not available', () => {
+
+
+  });
 });
